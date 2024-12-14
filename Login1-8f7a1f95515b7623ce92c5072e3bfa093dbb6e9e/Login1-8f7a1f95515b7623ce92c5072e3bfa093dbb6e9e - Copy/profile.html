@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="profile.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Skill Hunt</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                  <a class="nav-link active" href="SKhuntdashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html">Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+
+      <!-- Profile Container -->
+  <div class="profile-container d-flex flex-column align-items-center pt-5">
+    <!-- Profile Card -->
+    <div class="card profile-card shadow-sm p-4 text-center">
+      <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img rounded-circle mb-3">
+      <h3 class="profile-name">Arnulfo Ale</h3>
+      <p class="text-muted">@arnulfoale</p>
+      <p class="profile-bio">A passionate developer who loves to create innovative solutions and explore new technologies.</p>
+      <button class="btn btn-primary w-50">Edit Profile</button>
+    </div>
+
+    <!-- Stats Section -->
+    <div class="container mt-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card stats-card text-center p-3">
+            <h4>Posts</h4>
+            <p class="fs-2 fw-bold">120</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card stats-card text-center p-3">
+            <h4>Followers</h4>
+            <p class="fs-2 fw-bold">5,230</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card stats-card text-center p-3">
+            <h4>Following</h4>
+            <p class="fs-2 fw-bold">180</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3 mt-auto">
+    <div class="container text-center">
+      <p class="m-0">© ArnulfoAle 2024. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="profile.js"></script>
+</body>

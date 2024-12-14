@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recommendations</title>
+  <link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="recommendations.css" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Skill Hunt</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="SKhuntdashboard.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dashboard.html">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="profile.html">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="settings.html">Settings</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger" href="login.html">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  
+
+
+       <!-- Recommendations Section -->
+  <div class="container mt-5">
+    <h1 class="text-center mb-4">Skill Recommendations</h1>
+    <div class="row g-4">
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">JavaScript</h5>
+            <p class="card-text">
+              Enhance your frontend skills with JavaScript frameworks like React and Angular.
+            </p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Data Analysis</h5>
+            <p class="card-text">
+              Learn data analysis tools like Python, R, and Excel to process and visualize data effectively.
+            </p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-body">
+            <h5 class="card-title">Cloud Computing</h5>
+            <p class="card-text">
+              Get started with cloud platforms like AWS, Azure, and Google Cloud for scalable solutions.
+            </p>
+            <a href="#" class="btn btn-primary">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Back Button -->
+    <div class="container mt-3">
+        <button class="btn btn-secondary" id="backButton">← Back</button>
+      </div>
+    
+
+      <!-- Footer -->
+    <footer class="bg-dark text-light py-3 mt-auto">
+      <div class="container text-center">
+        <p class="m-0">© ArnulfoAle 2024. All rights reserved.</p>
+      </div>
+    </footer>
+    </div>
+  </div>
+  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+  <script src="recommendations.js"></script>
+</body>
+</html>

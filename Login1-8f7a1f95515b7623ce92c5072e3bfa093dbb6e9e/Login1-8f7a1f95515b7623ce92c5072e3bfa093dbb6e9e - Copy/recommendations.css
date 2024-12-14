@@ -1,0 +1,140 @@
+body {
+    font-family: "Aerial", sans-serif;
+    margin: 0;
+    padding: 0%;
+    background-color: grey;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #ccc;
+}
+
+.fw-bold {
+    text-align: left;
+}
+
+.text-muted {
+    text-align: left;
+}
+
+h1, h3 {
+    color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    padding: 10px 20px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #343a40; /* Dark background */
+    color: #ccc; /* Light grey text */
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fdfbfb;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-brand2 {
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #343a40;
+
+}
+.navbar-brand:hover {
+    color: #ce4f20;
+    transform: scale(1.1);
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: grey;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding: 5px 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #fff;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #ce4f20;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    transition: transform 0.4s ease;
+}
+
+
+
+.nav-link:hover::before {
+    right: 0;
+}
+
+.nav-link:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #ce4f20;
+}
+
+/* Special Hover for Danger Link */
+.nav-link.text-danger {
+    color: grey;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-link.text-danger:hover {
+    color: red;
+    box-shadow: inset 0 -2px 0 0 red;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+    }
+}
+
+/* Position the back button at the top-left corner */
+#backButton {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 1000; /* Ensures the button is above other content */
+    background-color: rgb(16, 42, 161);
+}
+  

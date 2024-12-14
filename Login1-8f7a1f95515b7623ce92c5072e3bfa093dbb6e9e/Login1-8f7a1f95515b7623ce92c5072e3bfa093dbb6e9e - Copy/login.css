@@ -1,0 +1,58 @@
+ /* Custom Styles */
+
+
+  .form-control {
+    border-radius: 50px;
+  }
+
+  .btn {
+    border-radius: 50px;
+  }
+
+  .google-btn, .facebook-btn {
+    border-radius: 50px;
+  }
+
+  /* Keyframes for gradient animation */
+  @keyframes gradientBackground {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  /* Adjust for smaller devices (mobile) */
+  @media (max-width: 768px) {
+    .stripe-bg {
+      display: none;
+    }
+
+    /* On mobile, use 90% width */
+    .login-container {
+      width: 90% !important;
+    }
+  }
+
+  /* Adjust for larger devices (laptops/desktops) */
+  @media (min-width: 769px) {
+    .login-container {
+      width: 70% !important; /* Wider on larger screens */
+      max-width: 800px; /* Max width for large screens */
+    }
+
+    /* Increase the width of the left section (welcome) */
+    .welcome-section {
+      width: 50% !important; /* Increase welcome section width */
+    }
+
+    .col-md-6 {
+      padding: 0;
+    }
+  }
+
+ 
